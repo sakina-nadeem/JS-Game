@@ -1,0 +1,168 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Light background for contrast */
+}
+
+main {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 80px); /* Adjusted size for better fit */
+    grid-template-rows: repeat(3, 80px);    /* Adjusted size for better fit */
+    gap: 5px; /* Reduced gap between buttons */
+}
+
+.btn {
+    width: 80px; /* Adjusted size */
+    height: 80px; /* Adjusted size */
+    font-size: 2.5em; /* Adjusted font size for readability */
+    background-color: #e6f8f8; /* Beautiful background color */
+    border: 2px solid #adbdc2; /* Matching border color */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transitions for effects */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00796b; /* Text color */
+    font-weight: bold; /* Bold text */
+}
+
+.btn:hover {
+    background-color: #afedf7; /* Slightly darker on hover */
+    border-color: #42d0e6; /* Darker border on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
+}
+
+.btn:active {
+    background-color: #b2ebf2; /* Slightly darker when pressed */
+    transform: translateY(2px); /* Simulates a button press effect */
+}
+
+/* Reset Game Button Styling */
+button#reset-btn {
+    padding: 5px 10px; /* Adjusted padding for a more comfortable size */
+    font-size: 1em; /* Slightly larger text for readability */
+    background: linear-gradient(145deg, #da1c1c, #da0b0b); /* Soft gradient background */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for a soft look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #eaf1f1; /* Text color to match the game buttons */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transitions for effects */
+    font-weight: bold; /* Bold text */
+    outline: none; /* Remove default focus outline */
+    margin-top: 1rem;
+}
+
+button#reset-btn:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+    background: #e69783; /* Flat color when pressed */
+    color: #da0b0b;
+}
+
+button#reset-btn:active {
+    background: #e69783; /* Flat color when pressed */
+    color: #da0b0b;
+    transform: translateY(2px); /* Simulates a button press effect */
+}
+
+.msg {
+    color: green;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.new-msg {
+    color: green;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#new-game {
+    padding: 5px 10px; /* Adjusted padding for a more comfortable size */
+    font-size: 1em; /* Slightly larger text for readability */
+    background: linear-gradient(145deg, #da1c1c, #da0b0b); /* Soft gradient background */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for a soft look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #eaf1f1; /* Text color to match the game buttons */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transitions for effects */
+    font-weight: bold; /* Bold text */
+    outline: none; /* Remove default focus outline */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+button#new-game:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+    background: #e69783; /* Flat color when pressed */
+    color: #da0b0b;
+}
+
+button#new-game:active {
+    background: #e69783; /* Flat color when pressed */
+    color: #da0b0b;
+    transform: translateY(2px); /* Simulates a button press effect */
+}
+
+.hide {
+    display: none;
+}
+
+.new {
+    display: none;
+}
+
+#over {
+    padding: 5px 10px; /* Adjusted padding for a more comfortable size */
+    font-size: 1em; /* Slightly larger text for readability */
+    background: linear-gradient(145deg, #da1c1c, #da0b0b); /* Soft gradient background */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for a soft look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #eaf1f1; /* Text color to match the game buttons */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transitions for effects */
+    font-weight: bold; /* Bold text */
+    outline: none; /* Remove default focus outline */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+
+button#over:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+    background: #e69783; /* Flat color when pressed */
+    color: #da0b0b;
+}
+
+button#over:active {
+    background: #e69783; /* Flat color when pressed */
+    color: #da0b0b;
+    transform: translateY(2px); /* Simulates a button press effect */
+}
